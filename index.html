@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="Description" content="This domains OpenPGP Web Key Directory Service informational site.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenPGP Web Key Directory Service</title>
+    <link rel="shortcut icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGNJREFUeNpiYKAFYGFn9wfi+0D8H4pBbH9iNdsjaTwPxPuR+PbEGHAeqjgezUVgA4kxAKtCmEvQxZlwmPOB2PBiombI5yMFFiGcj80FAiTYJ0A1L4wagGrABxL0faBa+gEIMADz0iKXhglKDAAAAABJRU5ErkJggg=="/>
+    <style>
+        body { max-width: 900px; min-width: 350px; text-align: center; margin: auto; padding: 0 25px 25px; }
+        hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #eee; height: 0; }
+        svg { fill: #3076b1; padding-top: 60px; padding-bottom: 20px; }
+        a { color: #3076b1; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <svg width="130px" height="130px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" alt="Site Logo"><path d="m400,256l-248,0l0,-103.1c0,-39.6 31.7,-72.5 71.3,-72.9c40,-0.4 72.7,32.1 72.7,72l0,104l80,0l-0.33333,-104c0,-84 -68.16667,-152.3 -152.16667,-152c-84,0.3 -151.5,69.5 -151.5,153.5l0,102.5l-24,0c-26.5,0 -48,21.5 -48,48l0,160c0,26.5 21.5,48 48,48l352,0c26.5,0 48,-21.5 48,-48l0,-160c0,-26.5 -21.5,-48 -48,-48zm-136,152c0,22.1 -17.9,40 -40,40s-40,-17.9 -40,-40l0,-48c0,-22.1 17.9,-40 40,-40s40,17.9 40,40l0,48z"/></svg>
+    <h1>OpenPGP Web Key Directory Service</h1>
+    <hr />
+    <p>This is the example.com OpenPGP Web Key Directory (WKD) service.  WKD allows an outside user, using an appropriate email client, to discover and import, through authoritative channels, a future corresponds OpenPGP public key, without using outside servers.  This server provides the <i>advanced method</i> of key discovery as described in network working group specification, in <a href='https://tools.ietf.org/html/draft-koch-openpgp-webkey-service#section-3.1' target='_blank' rel='noopener'>&#167;3.1 - Key Discovery</a>.</p>
+    <p>If you have an email address on the example.com domain, you may publish your public key via the <a href='https://tools.ietf.org/html/draft-koch-openpgp-webkey-service#section-4' target='_blank' rel='noopener'>WKD Update Protocol</a>, or by sending an unencrypted message to the submission-address; <b><code>wkd-submission@example.com</code></b> with your public key as an attachment.</p>
+    <p>If you have already submitted your key, you may confirm its availability via the <a href='https://metacode.biz/openpgp/web-key-directory' target='_blank' rel='noopener'>WKD Checker</a> site.<br /><small><i>Please note, it may take up to <b>30 minutes</b>, after your key has been confirmed, before it is available to the public.</i></small></p>
+    <hr />
+    <p>For more information on how to use this service, see the GnuPG wiki article on <a href='https://wiki.gnupg.org/WKD' target='_blank' rel='noopener'>WKD</a>.  For information on how to build a service similar to this, see <a href='https://keyserver.mattrude.com/guides/web-key-directory/' target='_blank' rel='noopener'>Publishing A Public PGP Key via HTTPS</a>, or the <a href='https://tools.ietf.org/html/draft-koch-openpgp-webkey-service' target='_blank' rel='noopener'>OpenPGP WKD Network Working Group</a> specification.</p>
+    <hr />
+    <p>This service is provided by <a href='mailto://matt@mattrude.com'>Matt Rude</a>.</p>
+    <script>
+        var currentDomain = document.domain;
+        document.body.innerHTML = document.body.innerHTML.replace(/example.com/g, currentDomain);
+        document.body.innerHTML = document.body.innerHTML.replace(/www.openpgpkey./g, '');
+        document.body.innerHTML = document.body.innerHTML.replace(/openpgpkey./g, '');
+    </script>
+</body>
+</html>
