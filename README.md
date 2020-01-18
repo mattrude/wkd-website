@@ -2,7 +2,9 @@
 
 This is my [Web Key Directory Service (WKD)](https://tools.ietf.org/html/draft-koch-openpgp-webkey-service) website.  This project is intended to display a small page if a user happens to go to the WKD "advanced method" url (ie. https://openpgpkey.mattrude.com) explaining what the service is and how to access more infromation about WKD.
 
-This site is alredy build and only needs to be placed into the webdirectory for your openpgpkey site.  This page auto corrects the site domain when the site loads, via javascript.  All images are imbeaded into the index.html file.
+This site is already build and only needs to be placed into the web directory for your openpgpkey site.  This page auto corrects the site domain when the site loads, via javascript, only the [Contact](https://github.com/mattrude/wkd-website/blob/master/index.html#L26) link requires updating.  All images are imbeaded into the index.html file.
+
+Please remember to update the [Contact](https://github.com/mattrude/wkd-website/blob/master/index.html#L26) link.
 
 ## Nginx Config
 
