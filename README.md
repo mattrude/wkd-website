@@ -50,6 +50,7 @@ server {
 
     location ^~/.git { return 404; }
     location ^~/.gitignore { return 404; }
+    location ^~/LICENSE { return 404; }
     location ^~/README.md { return 404; }
 }
 ```
