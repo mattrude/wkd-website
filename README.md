@@ -4,11 +4,11 @@ This is my [Web Key Directory Service (WKD)](https://tools.ietf.org/html/draft-k
 
 This site is already build and only needs to be placed into the web directory for your openpgpkey site.  This page auto corrects the site domain when the site loads, via javascript, only the [Contact](https://github.com/mattrude/wkd-website/blob/master/index.html#L26) link requires updating.  All images are imbeaded into the index.html file.
 
-Please remember to update the [Contact](https://github.com/mattrude/wkd-website/blob/master/index.html#L26) link.
+**Please remember to update the [Contact](https://github.com/mattrude/wkd-website/blob/master/index.html#L26) link.**
 
 ## Nginx Config
 
-This site is inteaded to server mulitaple sites at the same time from the same directory.  You may eather create a new nginx config file per site, or add all the sites to the same file.  The below example assumes the root web directory on your webserver is `/var/www/openpgpkey`.
+This site is intended to serve multiple sites at the same time from the same directory.  You may either create a new nginx config file per site, or add all the sites to the same file.  The below example assumes the root web directory on your webserver is `/var/www/openpgpkey`.
 
 ```
 #----------------------------------------------------------------------
